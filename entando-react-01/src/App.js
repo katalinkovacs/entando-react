@@ -23,11 +23,7 @@ class Header extends Component {
     render() {
         return (
             <div className="header">
-                <h3 className="text-muted">Hi {customerInfo.firstName}!
-                <p className="text-right">Your last access was on: some date</p>
-
-                </h3>
-
+                <h3 className="text-muted">Hi {customerInfo.firstName}! <small>Your last access was on: some date</small></h3>
             </div>
 
         );

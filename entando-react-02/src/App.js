@@ -29,8 +29,7 @@ class Searchbar extends Component {
                 <p>Arrow??? icon: <span className="glyphicon glyphicon-triangle-bottom"></span></p>
                 <p>menu down icon: <span className="glyphicon glyphicon-menu-down"></span></p>
                 <p>menu up icon: <span className="glyphicon glyphicon-menu-up"></span></p>
-
-
+                <p>sorting icon: <span className="glyphicons glyphicons-sorting"></span></p>
             </div>
         );
     }

@@ -33,7 +33,9 @@ function SearchBar(props) {
 function ProductTable(props) {
     const dataLocal = props.dataArg;
 
-
+/*
+looping
+*/
     const rows = dataLocal.map((dataItem) =>
         <tr>
             <td><input type="checkbox" value={dataItem.checked} /></td>

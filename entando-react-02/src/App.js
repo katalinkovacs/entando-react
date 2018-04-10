@@ -35,6 +35,44 @@ class Searchbar extends Component {
     }
 }
 
+
+/*TransactionInfoTable*/
+function TransactionInfoTable(props) {
+    const dataLocal = props.dataArg;
+
+    const rows = dataLocal.map((dataItem) =>
+        <tr>
+            <td><input type="checkbox" value={dataItem.checked} /></td>
+            <td>{dataItem.recentActivity}</td>
+            <td>{dataItem.type}</td>
+            <td>{dataItem.description}</td>
+            <td>{dataItem.amount}</td>
+            <td>{dataItem.balance}</td>
+        </tr>
+    );
+
+        return (
+            <div class="row">
+                <table class="table table-striped table-bordered table-hover">
+                    <thead>
+                    </thead>
+                    <tr>
+                        <th><input type="checkbox" /></th>
+                        <th>Recent Activity</th>
+                        <th>Type</th>
+                        <th>Description</th>
+                        <th>Amount</th>
+                        <th>Balance</th>
+                    </tr>
+                    <tbody>
+                    {rows}
+                    </tbody>
+                </table>
+            </div>
+        );
+
+}
+
 /*BODY - DATA TABLE*/
 class DataTable extends Component {
 
@@ -112,7 +150,7 @@ class DataTable extends Component {
                         <th>Amount</th>
                         <th>Balance</th>
                     </tr>
-                    <tbody>ROWS DATA
+                    <tbody>
                     {this.rows}
                     </tbody>
                 </table>
@@ -120,18 +158,9 @@ class DataTable extends Component {
         );
     }
 
-
-
-
-
-
 }
 
-
-
-
-
-
+/*
 class App extends Component {
   render() {
     return (
@@ -142,6 +171,85 @@ class App extends Component {
       </div>
     );
   }
+}*/
+
+
+class App extends Component {
+    constructor() {
+        super();
+        this.state = {
+           /* transactionSelectValue: "",
+            searchText: "default",
+            transactionList: ["Transaction1", "Transaction2", "Transaction3"],*/
+            data:
+                [
+                    {
+                        "checked": true,
+                        "recentActivity": "18/03/2018",
+                        "type": "Transfer",
+                        "description": "some description ",
+                        "amount": "-$24",
+                        "balance": "$36.00"
+                    },
+                    {
+                        "checked": false,
+                        "recentActivity": "18/03/2018",
+                        "type": "Charge",
+                        "description": "Simple",
+                        "amount": "+$24",
+                        "balance": "+$36.66"
+                    },
+                    {
+                        "checked": true,
+                        "recentActivity": "18/03/2018",
+                        "type": "Payment",
+                        "description": "some description",
+                        "amount": "+$25",
+                        "balance": "$36.00"
+                    },
+                    {
+                        "checked": true,
+                        "recentActivity": "18/03/2018",
+                        "type": "Transfer",
+                        "description": "some description ",
+                        "amount": "-$24",
+                        "balance": "$36.00"
+                    },
+                    {
+                        "checked": false,
+                        "recentActivity": "18/03/2018",
+                        "type": "Charge",
+                        "description": "Simple",
+                        "amount": "+$24",
+                        "balance": "+$36.66"
+                    },
+                    {
+                        "checked": true,
+                        "recentActivity": "18/03/2018",
+                        "type": "Payment",
+                        "description": "some description",
+                        "amount": "+$25",
+                        "balance": "$36.00"
+                    }
+                ]
+        };
+    }
+
+    render() {
+        return (
+            <div class="container">
+                <Header/>
+                <Searchbar/>
+                {/*<SearchBar searchText={this.state.searchText} transactionList={this.state.transactionList} transactionSelectValue={this.state.transactionSelectValue} />*/}
+                <TransactionInfoTable dataArg={this.state.data} />
+            </div>
+        );
+    }
 }
+
+
+
+
+
 
 export default App;

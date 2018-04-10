@@ -43,39 +43,7 @@ class Body extends Component {
             <div className="container">
 
                 <div className="row">
-
-                    <div className="col-sm-8">Information
-                      {/*  <div className="row">
-                            <div className="col-sm-6">Customer Information -info</div>*/}
-                                <table className="table">
-                                    <thead>
-                                    <tr>
-                                        <th >Customer Information</th>
-                                        <th >Primary Contact Information</th>
-                                    </tr>
-                                    </thead>
-                                    <tbody>
-                                    <tr>
-                                        <td>Organization full name</td>
-                                        <td>Point of contact</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Internal application ID</td>
-                                        <td>Phone</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Entity type</td>
-                                        <td>Email</td>
-                                    </tr>
-                                    </tbody>
-                                </table>
-
-
-
-
-                          {/*  <div className="col-sm-6">Primary Contact Information -info</div>
-                        </div>*/}
-                    </div>
+                    <div className="col-sm-8">Information</div>
 
                     <div className="col-sm-4">Account Balance
                         <a className="thumbnail" href="#">
@@ -83,6 +51,31 @@ class Body extends Component {
                         </a>
                     </div>
                 </div>
+
+                <div className="row">
+                    <div className="col-sm-6">Customer Information</div>
+                    <div className="col-sm-6">Primary Contact Information</div>
+                </div>
+
+                <div className="row">
+                    <div className="col-sm-6">Organization full name</div>
+                    <div className="col-sm-6">Point of contact</div>
+                </div>
+
+                <div className="row">
+                    <div className="col-sm-6">Internal application ID</div>
+                    <div className="col-sm-6">Phone</div>
+                </div>
+
+                <div className="row">
+                    <div className="col-sm-6">Entity Type</div>
+                    <div className="col-sm-6">Email</div>
+                </div>
+
+
+
+
+
             </div>
 
         );

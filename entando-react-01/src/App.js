@@ -56,12 +56,16 @@ class Body extends Component {
                                     </thead>
                                     <tbody>
                                     <tr>
-                                        <td>12345</td>
-                                        <td>Feb 1, 2014</td>
+                                        <td>Organization full name</td>
+                                        <td>Point of contact</td>
                                     </tr>
                                     <tr>
-                                        <td>67890</td>
-                                        <td>Jan 30, 2014</td>
+                                        <td>Internal application ID</td>
+                                        <td>Phone</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Entity type</td>
+                                        <td>Email</td>
                                     </tr>
                                     </tbody>
                                 </table>

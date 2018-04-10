@@ -4,7 +4,7 @@ import './App.css';
 
 
 
-/*HEADER*/
+/*/!*HEADER*!/
 class Header extends Component {
 
     render() {
@@ -15,7 +15,32 @@ class Header extends Component {
 
         );
     }
+}*/
+
+
+
+function Header() {
+
+    return (
+        <div className="header">
+            <h3 className="text-muted">Transaction History</h3>
+        </div>
+    );
+    
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /*SEARCHBAR*/
 class Searchbar extends Component {
@@ -83,7 +108,7 @@ class DataTable extends Component {
             [
                 {
                     "checked": true,
-                    "recentActivity": "18/03/2018",
+                    "recentActivity": "09/04/2018",
                     "type": "Payment",
                     "description": "Simple",
                     "amount": "+$24",
@@ -99,7 +124,7 @@ class DataTable extends Component {
                 },
                 {
                     "checked": true,
-                    "recentActivity": "18/03/2018",
+                    "recentActivity": "16/02/2018",
                     "type": "Payment",
                     "description": "Simple",
                     "amount": "+$24",
@@ -107,7 +132,7 @@ class DataTable extends Component {
                 },
                 {
                     "checked": false,
-                    "recentActivity": "18/03/2018",
+                    "recentActivity": "28/12/2017",
                     "type": "Payment",
                     "description": "Simple",
                     "amount": "+$24",
@@ -115,7 +140,7 @@ class DataTable extends Component {
                 },
                 {
                     "checked": true,
-                    "recentActivity": "18/03/2018",
+                    "recentActivity": "08/01/2018",
                     "type": "Payment",
                     "description": "Simple",
                     "amount": "+$24",

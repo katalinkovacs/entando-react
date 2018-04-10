@@ -77,7 +77,7 @@ class App extends Component {
         super();
         this.state = {
             transactionSelectValue: "",
-            searchText: "faszom",
+            searchText: "default",
             transactionList: ["Transaction1", "Transaction2", "Transaction3"],
             data:
                 [

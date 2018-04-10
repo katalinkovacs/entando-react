@@ -13,6 +13,7 @@ const customerInfo = {
     pointOfContact: '21 Forest View, London',
     phone: '055 125638',
     email: 'kevinsmith@interstellar.com',
+    accountBalance: '$ 210,660',
 };
 
 
@@ -22,8 +23,10 @@ class Header extends Component {
     render() {
         return (
             <div className="header">
+                <h3 className="text-muted">Hi {customerInfo.firstName}!
+                <p className="text-right">Your last access was on: some date</p>
 
-                <h3 className="text-muted">Hello {customerInfo.firstName}! <small>Your last access: DATE</small></h3>
+                </h3>
 
             </div>
 
@@ -67,10 +70,8 @@ class Body extends Component {
 
                     </div>
 
-                    <div className="col-sm-4"><h3>Account Balance</h3>
-                        {/*<a className="thumbnail" href="#">
-                            <img className="img-responsive" src="entandologo.jpg" alt="EntandoLogo" width="460" height="345"/>
-                        </a>*/}
+                    <div className="col-sm-4 bg-info text-white"><h3>Account Balance</h3>
+                        <b>{customerInfo.accountBalance}</b><br/>
                     </div>
                 </div>
 

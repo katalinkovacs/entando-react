@@ -3,20 +3,17 @@ import logo from './logo.svg';
 import './App.css';
 
 
-
-
-const user = {
+/*CUSTOMER INFO*/
+const customerInfo = {
     firstName: 'Kevin',
     lastName: 'Smith',
+    orgFullName: 'Interstellar Inc.',
+    internalAppId: '001235689',
+    entityType: 'Corporate',
+    pointOfContact: '21 Forest View, London',
+    phone: '055 125638',
+    email: 'kevinsmith@interstellar.com',
 };
-
-function getUserName(user) {
-    return user.firstName + ' ' + user.lastName;
-}
-
-const element = <h1>Hello, {getUserName(user)}!</h1>;
-
-
 
 
 /*HEADER*/
@@ -26,7 +23,7 @@ class Header extends Component {
         return (
             <div className="header">
 
-                <h3 className="text-muted">Hello {getUserName(user)}! <small>Your last access: DATE</small></h3>
+                <h3 className="text-muted">Hello {customerInfo.firstName}! <small>Your last access: DATE</small></h3>
 
             </div>
 
@@ -38,42 +35,44 @@ class Header extends Component {
 
 /*BODY*/
 class Body extends Component {
+
     render() {
         return (
             <div className="container">
 
                 <div className="row">
-                    <div className="col-sm-8">Information</div>
+                    <div className="col-sm-8"><h3>Information</h3><br/>
+                        <div className="row">
+                            <div className="col-sm-6">
+                                <h6>Customer Information</h6>
+                                <br/><br/>
+                                Organization full name<br/>
+                                <b>{customerInfo.orgFullName}</b><br/>
+                                Internal application ID<br/>
+                                <b>{customerInfo.internalAppId}</b><br/>
+                                Entity Type<br/>
+                                <b>{customerInfo.entityType}</b><br/>
+                            </div>
+                            <div className="col-sm-6">
+                                <h6>Primary Contact Information</h6>
+                                <br/><br/>
+                                Point of contact<br/>
+                                <b>{customerInfo.pointOfContact}</b><br/>
+                                Phone<br/>
+                                <b>{customerInfo.phone}</b><br/>
+                                Email<br/>
+                                <b>{customerInfo.email}</b><br/>
+                            </div>
+                        </div>
 
-                    <div className="col-sm-4">Account Balance
-                        <a className="thumbnail" href="#">
+                    </div>
+
+                    <div className="col-sm-4"><h3>Account Balance</h3>
+                        {/*<a className="thumbnail" href="#">
                             <img className="img-responsive" src="entandologo.jpg" alt="EntandoLogo" width="460" height="345"/>
-                        </a>
+                        </a>*/}
                     </div>
                 </div>
-
-                <div className="row">
-                    <div className="col-sm-6">Customer Information</div>
-                    <div className="col-sm-6">Primary Contact Information</div>
-                </div>
-
-                <div className="row">
-                    <div className="col-sm-6">Organization full name</div>
-                    <div className="col-sm-6">Point of contact</div>
-                </div>
-
-                <div className="row">
-                    <div className="col-sm-6">Internal application ID</div>
-                    <div className="col-sm-6">Phone</div>
-                </div>
-
-                <div className="row">
-                    <div className="col-sm-6">Entity Type</div>
-                    <div className="col-sm-6">Email</div>
-                </div>
-
-
-
 
 
             </div>

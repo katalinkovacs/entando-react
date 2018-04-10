@@ -45,8 +45,8 @@ class Body extends Component {
                 <div className="row">
 
                     <div className="col-sm-8">Information
-                        <div className="row">
-                            <div className="col-sm-6">Customer Information 6</div>
+                      {/*  <div className="row">
+                            <div className="col-sm-6">Customer Information -info</div>*/}
                                 <table className="table">
                                     <thead>
                                     <tr>
@@ -69,8 +69,8 @@ class Body extends Component {
 
 
 
-                            <div className="col-sm-6">Primary Contact Information 6</div>
-                        </div>
+                          {/*  <div className="col-sm-6">Primary Contact Information -info</div>
+                        </div>*/}
                     </div>
 
                     <div className="col-sm-4">Account Balance

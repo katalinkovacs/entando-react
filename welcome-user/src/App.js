@@ -1,18 +1,47 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
 import './App.css';
+
 
 
 function WelcomeUser(props) {
 
     return (
-        <div className="header">
-            <h3 className="text-muted">Hi {props.custInfo.firstName}! <small>Your last access was on: some date</small></h3>
-        </div>
 
+        <div className="container-fluid">
+            <div className="row">
+                <div className="col-sm-8 text-muted"><h3>Hi {props.custInfo.firstName}!</h3></div>
+                <div className="col-sm-4 text-muted text-left">
+                    <small>Your last access, Friday 20 October 2017 at 5:00pm</small>
+                </div>
+            </div>
+        </div>
     );
 
 }
+
+
+
+
+/*TEST Bootstrap 2.3.2*/
+
+/*
+function WelcomeUser(props) {
+
+    return (
+
+        <div className="container-fluid">
+            <div className="row">
+                <div className="span9 text-muted"><h3>Hi {props.custInfo.firstName}!</h3></div>
+                <div className="span3 text-muted text-left">
+                    <small>Your last access, Friday 20 October 2017 at 5:00pm</small>
+                </div>
+            </div>
+        </div>
+    );
+
+}
+*/
+
 
 class App extends Component {
     constructor() {
@@ -42,5 +71,4 @@ class App extends Component {
         );
     }
 }
-
 export default App;

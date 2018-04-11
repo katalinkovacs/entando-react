@@ -5,14 +5,14 @@ import './App.css';
 
 function Header(props) {
 
-/*
-    const dataLocal = props.dataArg;
-*/
+
+    const infoLocal = props.custInfo;
+
 
 
         return (
             <div className="header">
-                <h3 className="text-muted">Hi {dataArg.firstName}! <small>Your last access was on: some date</small></h3>
+                <h3 className="text-muted">Hi {infoLocal.firstName}! <small>Your last access was on: some date</small></h3>
             </div>
 
         );
@@ -99,7 +99,7 @@ class App extends Component {
     render() {
         return (
             <div class="container">
-                <Header dataArg={this.state.customerInfo}/>
+                <Header custInfo={this.state.customerInfo}/>
                 {/*<SearchBar searchText={this.state.searchText} transactionList={this.state.transactionList} transactionSelectValue={this.state.transactionSelectValue} />*/}
 {/*
                 <Body dataArg={this.state.data}/>

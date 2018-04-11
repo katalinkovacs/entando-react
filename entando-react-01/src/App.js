@@ -3,42 +3,16 @@ import logo from './logo.svg';
 import './App.css';
 
 
-/*CUSTOMER INFO*/
-/*const customerInfo = {
-    firstName: 'Kevin',
-    lastName: 'Smith',
-    orgFullName: 'Interstellar Inc.',
-    internalAppId: '001235689',
-    entityType: 'Corporate',
-    pointOfContact: '21 Forest View, London',
-    phone: '055 125638',
-    email: 'kevinsmith@interstellar.com',
-    accountBalance: '$ 210,660',
-};*/
-
-
-/*HEADER*/
-/*class Header extends Component {
-
-    render() {
-        return (
-            <div className="header">
-                <h3 className="text-muted">Hi {customerInfo.firstName}! <small>Your last access was on: some date</small></h3>
-            </div>
-
-        );
-    }
-}*/
-
 function Header(props) {
 
 /*
     const dataLocal = props.dataArg;
 */
 
+
         return (
             <div className="header">
-                <h3 className="text-muted">Hi {props.customerInfo.firstName}! <small>Your last access was on: some date</small></h3>
+                <h3 className="text-muted">Hi {dataArg.firstName}! <small>Your last access was on: some date</small></h3>
             </div>
 
         );
@@ -48,6 +22,7 @@ function Header(props) {
 
 
 /*BODY*/
+/*
 class Body extends Component {
 
     render() {
@@ -93,6 +68,7 @@ class Body extends Component {
     }
 }
 
+*/
 
 
 

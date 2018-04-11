@@ -17,8 +17,6 @@ class Header extends Component {
     }
 }*/
 
-
-
 function Header() {
 
     return (
@@ -26,19 +24,8 @@ function Header() {
             <h3 className="text-muted">Transaction History</h3>
         </div>
     );
-    
+
 }
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -98,8 +85,8 @@ function TransactionInfoTable(props) {
 
 }
 
-/*BODY - DATA TABLE*/
-class DataTable extends Component {
+
+/*class DataTable extends Component {
 
     constructor(props) {
         super(props)
@@ -143,7 +130,7 @@ class DataTable extends Component {
                     "recentActivity": "08/01/2018",
                     "type": "Payment",
                     "description": "Simple",
-                    "amount": "+$24",
+                    "amount": "$24",
                     "balance": "+36"
                 }
             ]
@@ -183,7 +170,7 @@ class DataTable extends Component {
         );
     }
 
-}
+}*/
 
 /*
 class App extends Component {
@@ -214,14 +201,14 @@ class App extends Component {
                         "type": "Transfer",
                         "description": "some description ",
                         "amount": "-$24",
-                        "balance": "$36.00"
+                        "balance": "-$36.00"
                     },
                     {
                         "checked": false,
                         "recentActivity": "18/03/2018",
                         "type": "Charge",
                         "description": "Simple",
-                        "amount": "+$24",
+                        "amount": "-$240",
                         "balance": "+$36.66"
                     },
                     {
@@ -230,7 +217,7 @@ class App extends Component {
                         "type": "Payment",
                         "description": "some description",
                         "amount": "+$25",
-                        "balance": "$36.00"
+                        "balance": "+$36.00"
                     },
                     {
                         "checked": true,
@@ -238,7 +225,7 @@ class App extends Component {
                         "type": "Transfer",
                         "description": "some description ",
                         "amount": "-$24",
-                        "balance": "$36.00"
+                        "balance": "-$36.00"
                     },
                     {
                         "checked": false,
@@ -254,7 +241,7 @@ class App extends Component {
                         "type": "Payment",
                         "description": "some description",
                         "amount": "+$25",
-                        "balance": "$36.00"
+                        "balance": "$-36.00"
                     }
                 ]
         };
@@ -263,7 +250,7 @@ class App extends Component {
     render() {
         return (
             <div class="container">
-                <Header/>
+                <Header />
                 <Searchbar/>
                 {/*<SearchBar searchText={this.state.searchText} transactionList={this.state.transactionList} transactionSelectValue={this.state.transactionSelectValue} />*/}
                 <TransactionInfoTable dataArg={this.state.data} />

@@ -1,17 +1,20 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
 import './App.css';
 
 
 function GeneralInformation(props){
 
+
+
+
+
     return (
         <div className="container">
 
             <div className="row">
-                <div className="col-sm-12"><h3>Information</h3><br/>
-                    <div className="row">
-                        <div className="col-sm-6">
+                <div className="span12"><h3>test bootstrap v2.3.2</h3><br/>
+                    <div className="row-fluid">
+                        <div className="span6">
                             <h6>Customer Information</h6>
                             <br/><br/>
                             Organization full name<br/>
@@ -21,7 +24,7 @@ function GeneralInformation(props){
                             Entity Type<br/>
                             <b>{props.custInfo.entityType}</b><br/>
                         </div>
-                        <div className="col-sm-6">
+                        <div className="span6">
                             <h6>Primary Contact Information</h6>
                             <br/><br/>
                             Point of contact<br/>

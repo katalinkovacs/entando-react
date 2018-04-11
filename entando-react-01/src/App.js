@@ -6,13 +6,9 @@ import './App.css';
 function Header(props) {
 
 
-    const infoLocal = props.custInfo;
-
-
-
         return (
             <div className="header">
-                <h3 className="text-muted">Hi {infoLocal.firstName}! <small>Your last access was on: some date</small></h3>
+                <h3 className="text-muted">Hi {props.custInfo.firstName}! <small>Your last access was on: some date</small></h3>
             </div>
 
         );
@@ -22,8 +18,8 @@ function Header(props) {
 
 
 /*BODY*/
-/*
-class Body extends Component {
+
+/*class Body extends Component {
 
     render() {
         return (
@@ -66,9 +62,61 @@ class Body extends Component {
 
         );
     }
+}*/
+
+
+
+
+/*BODY*/
+
+function Body(props){
+
+        return (
+            <div className="container">
+
+                <div className="row">
+                    <div className="col-sm-8"><h3>Information</h3><br/>
+                        <div className="row">
+                            <div className="col-sm-6">
+                                <h6>Customer Information</h6>
+                                <br/><br/>
+                                Organization full name<br/>
+                                <b>{props.custInfo.orgFullName}</b><br/>
+                                Internal application ID<br/>
+                                <b>{props.custInfo.internalAppId}</b><br/>
+                                Entity Type<br/>
+                                <b>{props.custInfo.entityType}</b><br/>
+                            </div>
+                            <div className="col-sm-6">
+                                <h6>Primary Contact Information</h6>
+                                <br/><br/>
+                                Point of contact<br/>
+                                <b>{props.custInfo.pointOfContact}</b><br/>
+                                Phone<br/>
+                                <b>{props.custInfo.phone}</b><br/>
+                                Email<br/>
+                                <b>{props.custInfo.email}</b><br/>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div className="col-sm-4 bg-info text-white"><h3>Account Balance</h3>
+                        <b>{props.custInfo.accountBalance}</b><br/>
+                    </div>
+                </div>
+
+
+            </div>
+
+        );
+
 }
 
-*/
+
+
+
+
 
 
 
@@ -80,7 +128,6 @@ class App extends Component {
              searchText: "default",
              transactionList: ["Transaction1", "Transaction2", "Transaction3"],*/
             customerInfo:
-                [
                     {
                         "firstName": "Kevin",
                         "lastName": "Smith",
@@ -92,7 +139,6 @@ class App extends Component {
                         "email": "kevinsmith@interstellar.com",
                         "accountBalance": "$ 210,660"
                     }
-                ]
         };
     }
 
@@ -101,9 +147,9 @@ class App extends Component {
             <div class="container">
                 <Header custInfo={this.state.customerInfo}/>
                 {/*<SearchBar searchText={this.state.searchText} transactionList={this.state.transactionList} transactionSelectValue={this.state.transactionSelectValue} />*/}
-{/*
-                <Body dataArg={this.state.data}/>
-*/}
+
+                <Body custInfo={this.state.customerInfo}/>
+
             </div>
         );
     }

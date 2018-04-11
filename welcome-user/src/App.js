@@ -4,7 +4,7 @@ import './App.css';
 
 
 function WelcomeUser(props) {
-    
+
     return (
         <div className="header">
             <h3 className="text-muted">Hi {props.custInfo.firstName}! <small>Your last access was on: some date</small></h3>

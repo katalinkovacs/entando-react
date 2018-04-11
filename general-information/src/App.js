@@ -7,13 +7,12 @@ function GeneralInformation(props){
 
     return (
         <div className="container">
-
             <div className="row">
-                <div className="col-sm-12"><h3>Information</h3><br/>
+                <div className="col-sm-12"><h2>Information</h2><br/>
                     <div className="row">
                         <div className="col-sm-6">
-                            <h6>Customer Information</h6>
-                            <br/><br/>
+                            <h5>Customer Information</h5>
+                            <br/>
                             Organization full name<br/>
                             <b>{props.custInfo.orgFullName}</b><br/>
                             Internal application ID<br/>
@@ -22,8 +21,8 @@ function GeneralInformation(props){
                             <b>{props.custInfo.entityType}</b><br/>
                         </div>
                         <div className="col-sm-6">
-                            <h6>Primary Contact Information</h6>
-                            <br/><br/>
+                            <h5>Primary Contact Information</h5>
+                            <br/>
                             Point of contact<br/>
                             <b>{props.custInfo.pointOfContact}</b><br/>
                             Phone<br/>
@@ -32,12 +31,8 @@ function GeneralInformation(props){
                             <b>{props.custInfo.email}</b><br/>
                         </div>
                     </div>
-
                 </div>
-
             </div>
-
-
         </div>
 
     );

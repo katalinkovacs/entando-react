@@ -1,12 +1,9 @@
 {
-  "name": "test-inspinia",
+  "name": "test02-inspinia",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "INSPINIA": "^2.5.0",
-    "angular-inspinia-sdk": "^0.1.10",
-    "inspinia": "^2.6.5",
-    "inspinia_theme": "^1.0.0",
+    "inspinia-template": "^1.0.0",
     "react": "^16.3.1",
     "react-dom": "^16.3.1",
     "react-scripts": "1.1.4"

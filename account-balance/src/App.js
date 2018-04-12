@@ -1,11 +1,28 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
 import './App.css';
 
 function AccountBalance(props){
 
     return (
-        <div className="container">
+
+        <div className="col-lg-3">
+            <div className="widget lazur-bg no-padding">
+                <div className="p-m">
+                    <h1 className="m-xs">$ 210,660</h1>
+
+                    <h3 className="font-bold no-margins">
+                        Monthly income
+                    </h3>
+                    <small>Income form project Beta.</small>
+                </div>
+                <div className="flot-chart">
+                    <div className="flot-chart-content" id="flot-chart2"></div>
+                </div>
+            </div>
+        </div>
+
+
+   /* <div className="container">
 
             <div className="row">
                 <div className="col-sm-12 bg-info text-white"><h3>Account Balance</h3>
@@ -14,6 +31,12 @@ function AccountBalance(props){
             </div>
 
         </div>
+*/
+
+
+
+
+
     );
 }
 

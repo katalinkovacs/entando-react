@@ -1,0 +1,58 @@
+{
+  "_from": "inspinia_theme",
+  "_id": "inspinia_theme@1.0.0",
+  "_inBundle": false,
+  "_integrity": "sha1-fUmmVtYTzOx3rnPz8Z/tJ10inN8=",
+  "_location": "/inspinia_theme",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "tag",
+    "registry": true,
+    "raw": "inspinia_theme",
+    "name": "inspinia_theme",
+    "escapedName": "inspinia_theme",
+    "rawSpec": "",
+    "saveSpec": null,
+    "fetchSpec": "latest"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/inspinia_theme/-/inspinia_theme-1.0.0.tgz",
+  "_shasum": "7d49a656d613ccec77ae73f3f19fed275d229cdf",
+  "_spec": "inspinia_theme",
+  "_where": "C:\\Katalin\\GitHub\\entando-react\\test-inspinia",
+  "author": {
+    "name": "MaheshRamasamy"
+  },
+  "bugs": {
+    "url": "https://github.com/MaheshwaranRamasamy/inspinia_theme/issues"
+  },
+  "bundleDependencies": false,
+  "deprecated": false,
+  "description": "the template for ANPI projects",
+  "devDependencies": {
+    "grunt": "^1.0.1",
+    "grunt-contrib-jshint": "^1.0.0"
+  },
+  "homepage": "https://github.com/MaheshwaranRamasamy/inspinia_theme#readme",
+  "keywords": [
+    "css",
+    "js",
+    "responsive",
+    "front-end",
+    "web"
+  ],
+  "license": "ISC",
+  "main": "dist/js/inspinia.js",
+  "name": "inspinia_theme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MaheshwaranRamasamy/inspinia_theme.git"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "version": "1.0.0"
+}
